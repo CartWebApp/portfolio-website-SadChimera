@@ -1,12 +1,70 @@
-body {
-    background-color: rgb(193, 193, 193);
-    /* background-image: url(eh.png);
-    background-repeat: no-repeat;
-    background-size: contain; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* .guy {
-    width: 100%;
-    height: 4%;
-} */
+nav {
+    background-color: #eba924;
+}
 
+.navbar {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: center;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 18px;
+    padding: 10px 20px; 
+    display: block; 
+    transition: background-color 0.3s; 
+}
+
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+
+#backFoyer {
+    background-image: url('Img/foyer.png');
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh; 
+    margin: 0;
+    background-size: 42%;
+}
+.npc {
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
+    height: 80vh; 
+    cursor: pointer; 
+}
+
+.bird {
+    max-width: 100%;  
+    max-height: auto;   
+    position: absolute;
+    bottom: 7.7rem;  
+}
+
+.npc-text {
+    font-size: 16px;
+    color: white;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    display: none;              /* Initially hidden */
+}
