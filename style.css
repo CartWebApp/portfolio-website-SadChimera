@@ -98,7 +98,7 @@ img {
 .bird {
     max-width: 100%;
     position: absolute;
-    top: 2rem;
+    bottom: 5rem;
 }
 
 /* NPC Text styling */
