@@ -79,7 +79,7 @@ img {
 
 /* BackFoyer Section */
 #backFoyer {
-    background-image: url('Img/foyerr.png');
+  background-image: url('Img/foyerr.png');;
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
