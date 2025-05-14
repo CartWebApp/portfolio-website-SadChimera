@@ -335,3 +335,35 @@ article img {
     opacity: 1;
   }
 }
+
+/* Sidebar container */
+.sidebar {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  right: -300px; /* hidden off-screen */
+  bottom: 0;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  transition: 0.3s;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* Button styles */
+.open-btn, .close-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.close-btn {
+  right: 320px; /* position near sidebar */
+}

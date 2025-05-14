@@ -21,17 +21,27 @@
         <img src="img/bird2.png" class="bird" alt="handsome npc guy"/> 
         </div>
 
-<section id="Foyer">
+<!-- <section id="Foyer">
          <p id="text" class="npc-text" style="display: none;">“Oh, jolly, so glad you could make it here! There is still plenty of time until the final showcase! 
             Oh—oh, you forgot who we are celebrating? Come on now, it's Jennifer Lee! She’s the one who joined CART from 2024-2025?
             She draws art and writes in her free time? She coded this entire portfolio! Rumor has it that she’s going to birth a new summer coding/art project after she’s done with WEB! 
             A three-in-one package! Haha, I remember her memo: “I thought I’ll be a cool hacker stressing about not being caught; turns out, I was stressing over the ! TAB button." 
             Anyways lad, have a look around, maybe you could find the visual biography she put for her gracious viewers. Just click the arrows---oh! And don't forget the Lennys. They're important for unlocking the final stage.”</p>
-</section>
+</section> -->
+
+<!-- Sidebar (hidden by default) -->
+<div id="sidebar" class="sidebar">
+    <button onclick="closeSidebar()" class="close-btn">X</button>
+    <p>“Jennifer grew up in the Fresno area before moving to Clovis. A poor lassie ain't it? She atted CLovis East Highshool.”</p>
+</div>
+
+<!-- Button to open sidebar -->
+<button onclick="openSidebar()" class="open-btn">?</button>
+
 
     <nav>
         <ul class="navbar">
-            <li><a href="Foyer.html">FOYER</a></li>
+            <li><a href="index.html">FOYER</a></li>
             <li><a href="aboutme.html">ABOUT ME</a></li>
             <li><a href="resume.html">RESUME</a></li>
             <li><a href="portfolio.html">PORTFOLIO</a></li>
@@ -44,5 +54,14 @@
         This is a surreal portfolio.  Something is very normal. Thank YOU for being understanding. Art is ART.
     </p>
 </footer>
+<script>
+    function openSidebar() {
+        document.getElementById("sidebar").style.right = "0";
+    }
+    
+    function closeSidebar() {
+        document.getElementById("sidebar").style.right = "-300px";
+    }
+    </script>    
 </body>
 </html>
