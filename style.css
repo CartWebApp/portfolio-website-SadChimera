@@ -272,3 +272,66 @@ article img {
             background-clip: text;  /* For other modern browsers */
             color: transparent;  /* Make the text transparent so the gradient shows through */
         }
+
+        /* --- Mobile Devices (max width 600px) --- */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .npc-text {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .god {
+    font-size: 28px;
+  }
+
+  .rainbow-text,
+  .rainbow-tex1 {
+    font-size: 18px;
+  }
+}
+
+/* --- Tablets (min 601px to 1024px) --- */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navbar a {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .npc-text {
+    font-size: 15px;
+  }
+
+  .god {
+    font-size: 34px;
+  }
+}
+
+/* --- Large screens (above 1024px) --- */
+@media (min-width: 1025px) {
+  .navbar a {
+    font-size: 20px;
+  }
+
+  .npc-text {
+    font-size: 18px;
+  }
+
+  .god {
+    font-size: 39px;
+  }
+}
+@media (max-width: 600px) {
+  .slide-in-left, .slide-in-right, .fadeIn {
+    animation: none;
+    opacity: 1;
+  }
+}
