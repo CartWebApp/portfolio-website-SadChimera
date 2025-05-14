@@ -9,17 +9,19 @@
 <body id="backFoyer">
 
      <footer>
-    <p style="text-align: center; color: white; background: black; padding: 10px;">
-        The Pigeon was supposed to say this: “Oh, jolly, so glad you could make it here! There is still plenty of time until the final showcase! 
-            Oh—oh, you forgot who we are celebrating? Come on now, it's Jennifer Lee! She’s the one who joined CART from 2024-2025? She coded this entire portfolio! Rumor has it that she’s going to birth a new summer coding/art project after she’s done with WEB! 
-            Haha, I remember her memo: “I thought I’ll be a cool hacker stressing about not being caught; turns out, I was stressing over the ! TAB button (still am)." 
-            Anyways lad, have a look around, maybe you could find the visual biography she put for her gracious viewers.”</p>
+    <p style="text-align: center; color: white; background: black; padding: 10px;">Click the burb</p>
     </p>
 </footer>
 
-         <div class="npc">
-        <img src="img/bird2.png" class="bird" alt="handsome npc guy"/> 
-        </div>
+<div class="npc">
+    <img src="img/bird2.png" class="bird" alt="handsome npc guy" onclick="birdSpeak()" />
+</div>
+
+<!-- Hidden speech text -->
+<p id="npc-speech" class="npc-text" style="display: none;">“Oh, jolly, so glad you could make it here! There is still plenty of time until the final showcase! 
+    Oh—oh, you forgot who we are celebrating? Come on now, it's Jennifer Lee! She’s the one who joined CART from 2024-2025? She coded this entire portfolio! Rumor has it that she’s going to birth a new summer coding/art project after she’s done with WEB! 
+    Haha, I remember her memo: “I thought I’ll be a cool hacker stressing about not being caught; turns out, I was stressing over the ! TAB button (still am)." 
+    Anyways lad, have a look around, maybe you could find the visual biography she put for her gracious viewers.”</p>
 
 <!-- <section id="Foyer">
          <p id="text" class="npc-text" style="display: none;">“Oh, jolly, so glad you could make it here! There is still plenty of time until the final showcase! 
@@ -32,7 +34,7 @@
 <!-- Sidebar (hidden by default) -->
 <div id="sidebar" class="sidebar">
     <button onclick="closeSidebar()" class="close-btn">X</button>
-    <p>“Jennifer grew up in the Fresno area before moving to Clovis. A poor lassie ain't it? She atted CLovis East Highshool.”</p>
+    <p>“Jennifer grew up in the Fresno area before moving to Clovis. A poor lassie ain't it? She attends CLovis East Highshool. She loves food, fried and decadent, cuisines of all sorts! She has a big heart with even bigger ambitions.”</p>
 </div>
 
 <!-- Button to open sidebar -->
@@ -41,7 +43,7 @@
 
     <nav>
         <ul class="navbar">
-            <li><a href="index.html">INDEX</a></li>
+            <li><a href="index.html">MAIN PAGE</a></li>
             <li><a href="aboutme.html">ABOUT ME</a></li>
             <li><a href="resume.html">RESUME</a></li>
             <li><a href="portfolio.html">PORTFOLIO</a></li>
@@ -49,11 +51,6 @@
         </ul>
     </nav>
 
-        <footer>
-    <p style="text-align: center; color: white; background: black; padding: 10px;">
-        This is a surreal portfolio.  Something is very normal. Thank YOU for being understanding. Art is ART.
-    </p>
-</footer>
 <script>
     function openSidebar() {
         document.getElementById("sidebar").style.right = "0";
@@ -61,6 +58,16 @@
     
     function closeSidebar() {
         document.getElementById("sidebar").style.right = "-300px";
+    }
+    function birdSpeak() {
+        // Show the speech text when the bird is clicked
+        const speech = document.getElementById("npc-speech");
+        speech.style.display = "block";  // Make the speech visible
+
+        // Optionally, you could add a little delay before the text disappears again
+        setTimeout(function() {
+            speech.style.display = "none";  // Hide the speech after a few seconds
+        }, 50000);  // 5000 ms = 5 seconds
     }
     </script>    
 </body>

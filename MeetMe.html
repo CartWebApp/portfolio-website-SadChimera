@@ -10,10 +10,16 @@
 </head>
 <body class="bastardchild">
 
+  <footer>
+    <p style="text-align: center; color: white; background: rgb(0, 0, 0); padding: 10px;">
+      (p.s just scroll down if you want to nav back)
+    </p>
+</footer>
+
     <!-- 3D Container where the scene will be rendered -->
     <div id="3d-container"></div>
 
-  <section>
+  <section class="godrays">
     <h1  class="rainbow-tex1">MEET ME! (That's right, I'm the floating prism of holy light if you didn't notice but yeah, anyways--)</h1>
     <p  class="rainbow-text" class="god">
       Hey, thanks for coming over to my gallery, esteemed guest! I greatly appreciate the time you put into exploring my portfolio and giving it some thought.
@@ -28,7 +34,7 @@
 
   <nav>
     <ul class="navbar">
-      <li><a href="index.html">INDEX</a></li>
+      <li><a href="index.html">MAIN PAGE</a></li>
       <li><a href="aboutme.html">ABOUT ME</a></li>
       <li><a href="resume.html">RESUME</a></li>
       <li><a href="portfolio.html">PORTFOLIO</a></li>
@@ -51,7 +57,7 @@
       // Create the renderer and attach it to the div in HTML
       const renderer = new THREE.WebGLRenderer();
       renderer.setSize(window.innerWidth, window.innerHeight);
-      renderer.setClearColor(0x000000, 1); // Set a black background
+      renderer.setClearColor(0x2a2a2a, 1); // Set a black background
       document.getElementById('3d-container').appendChild(renderer.domElement);
 
       // Create the octahedron geometry (two cones stacked together)
@@ -64,9 +70,9 @@
         metalness: 1, // Makes it shiny
         roughness: 0.3,
         emissive: 0x111111, // Gives a subtle glow
+        
         emissiveIntensity: 0.4
       });
-
       // Create the mesh and add it to the scene
       const octahedron = new THREE.Mesh(geometry, material);
       scene.add(octahedron);
